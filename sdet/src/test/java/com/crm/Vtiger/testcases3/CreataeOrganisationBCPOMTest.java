@@ -15,12 +15,11 @@ import generalUtilities.PropertyFileUtility;
 @Listeners(ListImp.class)
 public class CreataeOrganisationBCPOMTest extends BaseClass
 {
-PropertyFileUtility pfu=new PropertyFileUtility();
-	
-	ExcelFileUtility efu=new ExcelFileUtility();
 	@Test(groups="integration")
 	public void CreataeOrganisationBCPOM() throws Throwable
 	{
+		PropertyFileUtility pfu=new PropertyFileUtility();
+		ExcelFileUtility efu=new ExcelFileUtility();
 		String orgName=efu.readDataFromExcelFile("Sheet1", 1, 1)+JavaUtility.generateRannum();
 		
 		LoginPageclass lpc=new LoginPageclass(driver);

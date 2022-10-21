@@ -28,10 +28,11 @@ public class ContactBCPOMTest extends BaseClass
 	{
 	
 	ExcelFileUtility efu=new ExcelFileUtility();
-	String orgName=efu.readDataFromExcelFile("Sheet1", 1, 1)+JavaUtility.generateRannum(); 
+	 
 	 String fNAME=efu.readDataFromExcelFile("Sheet1", 3, 1);
 	 String fNAMETF=efu.readDataFromExcelFile("Sheet1", 4, 1);
 	 String lNAMETF=efu.readDataFromExcelFile("Sheet1", 5, 1);
+	 String orgName=efu.readDataFromExcelFile("Sheet1", 1, 1)+JavaUtility.generateRannum();
 	 
 	
 	
