@@ -1,477 +1,211 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="8" total="14" passed="3" failed="0" skipped="3">
+<testng-results ignored="8" total="10" passed="0" failed="0" skipped="2">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2022-10-21T10:26:40 IST" name="Suite" finished-at="2022-10-21T10:27:10 IST" duration-ms="30583">
+  <suite started-at="2022-10-21T17:14:54 IST" name="Suite" finished-at="2022-10-21T17:14:54 IST" duration-ms="139">
     <groups>
-      <group name="regression">
-        <method signature="LeadsBCPOMTest.LeadsBCPOM()[pri:0, instance:com.crm.Vtiger.testcases3.LeadsBCPOMTest@8519cb4]" name="LeadsBCPOM" class="com.crm.Vtiger.testcases3.LeadsBCPOMTest"/>
-        <method signature="LeadsBCPOMTest.LeadsBCPOM()[pri:0, instance:com.crm.Vtiger.testcases3.LeadsBCPOMTest@43df23d3]" name="LeadsBCPOM" class="com.crm.Vtiger.testcases3.LeadsBCPOMTest"/>
-      </group> <!-- regression -->
-      <group name="integration">
-        <method signature="CreataeOrganisationBCPOMTest.CreataeOrganisationBCPOM()[pri:0, instance:com.crm.Vtiger.testcases3.CreataeOrganisationBCPOMTest@35dab4eb]" name="CreataeOrganisationBCPOM" class="com.crm.Vtiger.testcases3.CreataeOrganisationBCPOMTest"/>
-        <method signature="CreataeOrganisationBCPOMTest.CreataeOrganisationBCPOM()[pri:0, instance:com.crm.Vtiger.testcases3.CreataeOrganisationBCPOMTest@6d60fe40]" name="CreataeOrganisationBCPOM" class="com.crm.Vtiger.testcases3.CreataeOrganisationBCPOMTest"/>
-      </group> <!-- integration -->
       <group name="smoke">
-        <method signature="ContactBCPOMTest.ContactBCPOM()[pri:0, instance:com.crm.Vtiger.testcases3.ContactBCPOMTest@196a42c3]" name="ContactBCPOM" class="com.crm.Vtiger.testcases3.ContactBCPOMTest"/>
-        <method signature="ContactBCPOMTest.ContactBCPOM()[pri:0, instance:com.crm.Vtiger.testcases3.ContactBCPOMTest@359df09a]" name="ContactBCPOM" class="com.crm.Vtiger.testcases3.ContactBCPOMTest"/>
+        <method signature="ContactBCPOMTest.ContactBCPOM()[pri:0, instance:com.crm.Vtiger.testcases3.ContactBCPOMTest@5f049ea1]" name="ContactBCPOM" class="com.crm.Vtiger.testcases3.ContactBCPOMTest"/>
+        <method signature="OrgNameValidateBCPOMTest.OrgNameValidateBCPOM()[pri:0, instance:com.crm.Vtiger.testcases3.OrgNameValidateBCPOMTest@7a35b0f5]" name="OrgNameValidateBCPOM" class="com.crm.Vtiger.testcases3.OrgNameValidateBCPOMTest"/>
       </group> <!-- smoke -->
     </groups>
-    <test started-at="2022-10-21T10:26:40 IST" name="test2" finished-at="2022-10-21T10:26:44 IST" duration-ms="4596">
-      <class name="com.crm.Vtiger.testcases3.LeadsBCPOMTest">
-        <test-method is-config="true" signature="launchBrowser(java.lang.String)[pri:0, instance:com.crm.Vtiger.testcases3.LeadsBCPOMTest@43df23d3]" started-at="2022-10-21T10:26:40 IST" name="launchBrowser" finished-at="2022-10-21T10:26:43 IST" duration-ms="3533" status="FAIL">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[firefox]]>
-              </value>
-            </param>
-          </params>
-          <exception class="org.openqa.selenium.SessionNotCreatedException">
+    <test started-at="2022-10-21T17:14:54 IST" name="Test" finished-at="2022-10-21T17:14:54 IST" duration-ms="139">
+      <class name="com.crm.Vtiger.testcases3.OrgNameValidateBCPOMTest">
+        <test-method is-config="true" signature="launchBrowser(java.lang.String)[pri:0, instance:com.crm.Vtiger.testcases3.OrgNameValidateBCPOMTest@7a35b0f5]" started-at="2022-10-21T17:14:54 IST" name="launchBrowser" finished-at="1970-01-01T05:30:00 IST" duration-ms="-1666352694640" status="FAIL">
+          <exception class="org.testng.TestNGException">
             <message>
-              <![CDATA[Could not start a new session. Response code 500. Message: Expected browser binary location, but unable to find binary in default location, no 'moz:firefoxOptions.binary' capability provided, and no binary flag set on the command line 
-Host info: host: 'TIGER', ip: '192.168.60.175'
-Build info: version: '4.5.0', revision: 'fe167b119a'
-System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.4.1'
-Driver info: org.openqa.selenium.firefox.FirefoxDriver
-Command: [null, newSession {capabilities=[Capabilities {acceptInsecureCerts: true, browserName: firefox, moz:debuggerAddress: true, moz:firefoxOptions: {}}], desiredCapabilities=Capabilities {acceptInsecureCerts: true, browserName: firefox, moz:debuggerAddress: true, moz:firefoxOptions: {}}}]]]>
+              <![CDATA[
+Parameter 'harisha' is required by BeforeClass on method launchBrowser but has not been marked @Optional or defined
+in C:\Users\91995\git\vtigerrepo\sdet\testngsmoke.xml]]>
             </message>
             <full-stacktrace>
-              <![CDATA[org.openqa.selenium.SessionNotCreatedException: Could not start a new session. Response code 500. Message: Expected browser binary location, but unable to find binary in default location, no 'moz:firefoxOptions.binary' capability provided, and no binary flag set on the command line 
-Host info: host: 'TIGER', ip: '192.168.60.175'
-Build info: version: '4.5.0', revision: 'fe167b119a'
-System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.4.1'
-Driver info: org.openqa.selenium.firefox.FirefoxDriver
-Command: [null, newSession {capabilities=[Capabilities {acceptInsecureCerts: true, browserName: firefox, moz:debuggerAddress: true, moz:firefoxOptions: {}}], desiredCapabilities=Capabilities {acceptInsecureCerts: true, browserName: firefox, moz:debuggerAddress: true, moz:firefoxOptions: {}}}]
-at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:144)
-at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:102)
-at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:67)
-at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:156)
-at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)
-at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:142)
-at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:547)
-at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:242)
-at org.openqa.selenium.remote.RemoteWebDriver.<init>(RemoteWebDriver.java:157)
-at org.openqa.selenium.firefox.FirefoxDriver.<init>(FirefoxDriver.java:110)
-at org.openqa.selenium.firefox.FirefoxDriver.<init>(FirefoxDriver.java:98)
-at org.openqa.selenium.firefox.FirefoxDriver.<init>(FirefoxDriver.java:94)
-at generalUtilities.BaseClass.launchBrowser(BaseClass.java:48)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
-at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-at java.base/java.lang.reflect.Method.invoke(Method.java:568)
-at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
-at org.testng.internal.invokers.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:69)
-at org.testng.internal.invokers.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:361)
-at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:296)
+              <![CDATA[org.testng.TestNGException: 
+Parameter 'harisha' is required by BeforeClass on method launchBrowser but has not been marked @Optional or defined
+in C:\Users\91995\git\vtigerrepo\sdet\testngsmoke.xml
+at org.testng.internal.Parameters.createParams(Parameters.java:267)
+at org.testng.internal.Parameters.createParametersForMethod(Parameters.java:355)
+at org.testng.internal.Parameters.createParameters(Parameters.java:684)
+at org.testng.internal.Parameters.createConfigurationParameters(Parameters.java:166)
+at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:277)
 at org.testng.internal.invokers.TestMethodWorker.invokeBeforeClassMethods(TestMethodWorker.java:180)
 at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:122)
-at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
-at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
-at java.base/java.lang.Thread.run(Thread.java:833)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:806)
+at org.testng.TestRunner.run(TestRunner.java:601)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:433)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:427)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:387)
+at org.testng.SuiteRunner.run(SuiteRunner.java:330)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1256)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1176)
+at org.testng.TestNG.runSuites(TestNG.java:1099)
+at org.testng.TestNG.run(TestNG.java:1067)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
 ]]>
             </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.SessionNotCreatedException -->
+          </exception> <!-- org.testng.TestNGException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- launchBrowser -->
-        <test-method is-config="true" signature="Login()[pri:0, instance:com.crm.Vtiger.testcases3.LeadsBCPOMTest@43df23d3]" started-at="2022-10-21T10:26:43 IST" name="Login" finished-at="2022-10-21T10:26:43 IST" duration-ms="0" status="SKIP">
+        <test-method is-config="true" signature="Login()[pri:0, instance:com.crm.Vtiger.testcases3.OrgNameValidateBCPOMTest@7a35b0f5]" started-at="2022-10-21T17:14:54 IST" name="Login" finished-at="2022-10-21T17:14:54 IST" duration-ms="0" status="SKIP">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- Login -->
-        <test-method signature="LeadsBCPOM()[pri:0, instance:com.crm.Vtiger.testcases3.LeadsBCPOMTest@43df23d3]" started-at="2022-10-21T10:26:43 IST" name="LeadsBCPOM" finished-at="2022-10-21T10:26:43 IST" duration-ms="1" status="SKIP">
-          <exception class="org.openqa.selenium.SessionNotCreatedException">
+        <test-method signature="OrgNameValidateBCPOM()[pri:0, instance:com.crm.Vtiger.testcases3.OrgNameValidateBCPOMTest@7a35b0f5]" started-at="2022-10-21T17:14:54 IST" name="OrgNameValidateBCPOM" finished-at="2022-10-21T17:14:54 IST" duration-ms="1" status="SKIP">
+          <exception class="org.testng.TestNGException">
             <message>
-              <![CDATA[Could not start a new session. Response code 500. Message: Expected browser binary location, but unable to find binary in default location, no 'moz:firefoxOptions.binary' capability provided, and no binary flag set on the command line 
-Host info: host: 'TIGER', ip: '192.168.60.175'
-Build info: version: '4.5.0', revision: 'fe167b119a'
-System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.4.1'
-Driver info: org.openqa.selenium.firefox.FirefoxDriver
-Command: [null, newSession {capabilities=[Capabilities {acceptInsecureCerts: true, browserName: firefox, moz:debuggerAddress: true, moz:firefoxOptions: {}}], desiredCapabilities=Capabilities {acceptInsecureCerts: true, browserName: firefox, moz:debuggerAddress: true, moz:firefoxOptions: {}}}]]]>
+              <![CDATA[
+Parameter 'harisha' is required by BeforeClass on method launchBrowser but has not been marked @Optional or defined
+in C:\Users\91995\git\vtigerrepo\sdet\testngsmoke.xml]]>
             </message>
             <full-stacktrace>
-              <![CDATA[org.openqa.selenium.SessionNotCreatedException: Could not start a new session. Response code 500. Message: Expected browser binary location, but unable to find binary in default location, no 'moz:firefoxOptions.binary' capability provided, and no binary flag set on the command line 
-Host info: host: 'TIGER', ip: '192.168.60.175'
-Build info: version: '4.5.0', revision: 'fe167b119a'
-System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.4.1'
-Driver info: org.openqa.selenium.firefox.FirefoxDriver
-Command: [null, newSession {capabilities=[Capabilities {acceptInsecureCerts: true, browserName: firefox, moz:debuggerAddress: true, moz:firefoxOptions: {}}], desiredCapabilities=Capabilities {acceptInsecureCerts: true, browserName: firefox, moz:debuggerAddress: true, moz:firefoxOptions: {}}}]
-at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:144)
-at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:102)
-at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:67)
-at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:156)
-at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)
-at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:142)
-at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:547)
-at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:242)
-at org.openqa.selenium.remote.RemoteWebDriver.<init>(RemoteWebDriver.java:157)
-at org.openqa.selenium.firefox.FirefoxDriver.<init>(FirefoxDriver.java:110)
-at org.openqa.selenium.firefox.FirefoxDriver.<init>(FirefoxDriver.java:98)
-at org.openqa.selenium.firefox.FirefoxDriver.<init>(FirefoxDriver.java:94)
-at generalUtilities.BaseClass.launchBrowser(BaseClass.java:48)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
-at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-at java.base/java.lang.reflect.Method.invoke(Method.java:568)
-at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
-at org.testng.internal.invokers.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:69)
-at org.testng.internal.invokers.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:361)
-at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:296)
+              <![CDATA[org.testng.TestNGException: 
+Parameter 'harisha' is required by BeforeClass on method launchBrowser but has not been marked @Optional or defined
+in C:\Users\91995\git\vtigerrepo\sdet\testngsmoke.xml
+at org.testng.internal.Parameters.createParams(Parameters.java:267)
+at org.testng.internal.Parameters.createParametersForMethod(Parameters.java:355)
+at org.testng.internal.Parameters.createParameters(Parameters.java:684)
+at org.testng.internal.Parameters.createConfigurationParameters(Parameters.java:166)
+at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:277)
 at org.testng.internal.invokers.TestMethodWorker.invokeBeforeClassMethods(TestMethodWorker.java:180)
 at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:122)
-at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
-at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
-at java.base/java.lang.Thread.run(Thread.java:833)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:806)
+at org.testng.TestRunner.run(TestRunner.java:601)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:433)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:427)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:387)
+at org.testng.SuiteRunner.run(SuiteRunner.java:330)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1256)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1176)
+at org.testng.TestNG.runSuites(TestNG.java:1099)
+at org.testng.TestNG.run(TestNG.java:1067)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
 ]]>
             </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.SessionNotCreatedException -->
+          </exception> <!-- org.testng.TestNGException -->
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- LeadsBCPOM -->
-        <test-method is-config="true" signature="Logout()[pri:0, instance:com.crm.Vtiger.testcases3.LeadsBCPOMTest@43df23d3]" started-at="2022-10-21T10:26:43 IST" name="Logout" finished-at="2022-10-21T10:26:43 IST" duration-ms="0" status="SKIP">
+        </test-method> <!-- OrgNameValidateBCPOM -->
+        <test-method is-config="true" signature="Logout()[pri:0, instance:com.crm.Vtiger.testcases3.OrgNameValidateBCPOMTest@7a35b0f5]" started-at="2022-10-21T17:14:54 IST" name="Logout" finished-at="2022-10-21T17:14:54 IST" duration-ms="0" status="SKIP">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- Logout -->
-        <test-method is-config="true" signature="CloseBrowser()[pri:0, instance:com.crm.Vtiger.testcases3.LeadsBCPOMTest@43df23d3]" started-at="2022-10-21T10:26:43 IST" name="CloseBrowser" finished-at="2022-10-21T10:26:43 IST" duration-ms="0" status="SKIP">
+        <test-method is-config="true" signature="CloseBrowser()[pri:0, instance:com.crm.Vtiger.testcases3.OrgNameValidateBCPOMTest@7a35b0f5]" started-at="2022-10-21T17:14:54 IST" name="CloseBrowser" finished-at="2022-10-21T17:14:54 IST" duration-ms="0" status="SKIP">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- CloseBrowser -->
-      </class> <!-- com.crm.Vtiger.testcases3.LeadsBCPOMTest -->
-      <class name="com.crm.Vtiger.testcases3.CreataeOrganisationBCPOMTest">
-        <test-method is-config="true" signature="launchBrowser(java.lang.String)[pri:0, instance:com.crm.Vtiger.testcases3.CreataeOrganisationBCPOMTest@6d60fe40]" started-at="2022-10-21T10:26:43 IST" name="launchBrowser" finished-at="2022-10-21T10:26:44 IST" duration-ms="1003" status="FAIL">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[firefox]]>
-              </value>
-            </param>
-          </params>
-          <exception class="org.openqa.selenium.SessionNotCreatedException">
-            <message>
-              <![CDATA[Could not start a new session. Response code 500. Message: Expected browser binary location, but unable to find binary in default location, no 'moz:firefoxOptions.binary' capability provided, and no binary flag set on the command line 
-Host info: host: 'TIGER', ip: '192.168.60.175'
-Build info: version: '4.5.0', revision: 'fe167b119a'
-System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.4.1'
-Driver info: org.openqa.selenium.firefox.FirefoxDriver
-Command: [null, newSession {capabilities=[Capabilities {acceptInsecureCerts: true, browserName: firefox, moz:debuggerAddress: true, moz:firefoxOptions: {}}], desiredCapabilities=Capabilities {acceptInsecureCerts: true, browserName: firefox, moz:debuggerAddress: true, moz:firefoxOptions: {}}}]]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[org.openqa.selenium.SessionNotCreatedException: Could not start a new session. Response code 500. Message: Expected browser binary location, but unable to find binary in default location, no 'moz:firefoxOptions.binary' capability provided, and no binary flag set on the command line 
-Host info: host: 'TIGER', ip: '192.168.60.175'
-Build info: version: '4.5.0', revision: 'fe167b119a'
-System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.4.1'
-Driver info: org.openqa.selenium.firefox.FirefoxDriver
-Command: [null, newSession {capabilities=[Capabilities {acceptInsecureCerts: true, browserName: firefox, moz:debuggerAddress: true, moz:firefoxOptions: {}}], desiredCapabilities=Capabilities {acceptInsecureCerts: true, browserName: firefox, moz:debuggerAddress: true, moz:firefoxOptions: {}}}]
-at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:144)
-at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:102)
-at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:67)
-at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:156)
-at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)
-at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:142)
-at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:547)
-at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:242)
-at org.openqa.selenium.remote.RemoteWebDriver.<init>(RemoteWebDriver.java:157)
-at org.openqa.selenium.firefox.FirefoxDriver.<init>(FirefoxDriver.java:110)
-at org.openqa.selenium.firefox.FirefoxDriver.<init>(FirefoxDriver.java:98)
-at org.openqa.selenium.firefox.FirefoxDriver.<init>(FirefoxDriver.java:94)
-at generalUtilities.BaseClass.launchBrowser(BaseClass.java:48)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
-at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-at java.base/java.lang.reflect.Method.invoke(Method.java:568)
-at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
-at org.testng.internal.invokers.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:69)
-at org.testng.internal.invokers.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:361)
-at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:296)
-at org.testng.internal.invokers.TestMethodWorker.invokeBeforeClassMethods(TestMethodWorker.java:180)
-at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:122)
-at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
-at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
-at java.base/java.lang.Thread.run(Thread.java:833)
-]]>
-            </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.SessionNotCreatedException -->
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- launchBrowser -->
-        <test-method is-config="true" signature="Login()[pri:0, instance:com.crm.Vtiger.testcases3.CreataeOrganisationBCPOMTest@6d60fe40]" started-at="2022-10-21T10:26:44 IST" name="Login" finished-at="2022-10-21T10:26:44 IST" duration-ms="0" status="SKIP">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- Login -->
-        <test-method signature="CreataeOrganisationBCPOM()[pri:0, instance:com.crm.Vtiger.testcases3.CreataeOrganisationBCPOMTest@6d60fe40]" started-at="2022-10-21T10:26:44 IST" name="CreataeOrganisationBCPOM" finished-at="2022-10-21T10:26:44 IST" duration-ms="0" status="SKIP">
-          <exception class="org.openqa.selenium.SessionNotCreatedException">
-            <message>
-              <![CDATA[Could not start a new session. Response code 500. Message: Expected browser binary location, but unable to find binary in default location, no 'moz:firefoxOptions.binary' capability provided, and no binary flag set on the command line 
-Host info: host: 'TIGER', ip: '192.168.60.175'
-Build info: version: '4.5.0', revision: 'fe167b119a'
-System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.4.1'
-Driver info: org.openqa.selenium.firefox.FirefoxDriver
-Command: [null, newSession {capabilities=[Capabilities {acceptInsecureCerts: true, browserName: firefox, moz:debuggerAddress: true, moz:firefoxOptions: {}}], desiredCapabilities=Capabilities {acceptInsecureCerts: true, browserName: firefox, moz:debuggerAddress: true, moz:firefoxOptions: {}}}]]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[org.openqa.selenium.SessionNotCreatedException: Could not start a new session. Response code 500. Message: Expected browser binary location, but unable to find binary in default location, no 'moz:firefoxOptions.binary' capability provided, and no binary flag set on the command line 
-Host info: host: 'TIGER', ip: '192.168.60.175'
-Build info: version: '4.5.0', revision: 'fe167b119a'
-System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.4.1'
-Driver info: org.openqa.selenium.firefox.FirefoxDriver
-Command: [null, newSession {capabilities=[Capabilities {acceptInsecureCerts: true, browserName: firefox, moz:debuggerAddress: true, moz:firefoxOptions: {}}], desiredCapabilities=Capabilities {acceptInsecureCerts: true, browserName: firefox, moz:debuggerAddress: true, moz:firefoxOptions: {}}}]
-at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:144)
-at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:102)
-at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:67)
-at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:156)
-at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)
-at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:142)
-at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:547)
-at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:242)
-at org.openqa.selenium.remote.RemoteWebDriver.<init>(RemoteWebDriver.java:157)
-at org.openqa.selenium.firefox.FirefoxDriver.<init>(FirefoxDriver.java:110)
-at org.openqa.selenium.firefox.FirefoxDriver.<init>(FirefoxDriver.java:98)
-at org.openqa.selenium.firefox.FirefoxDriver.<init>(FirefoxDriver.java:94)
-at generalUtilities.BaseClass.launchBrowser(BaseClass.java:48)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
-at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-at java.base/java.lang.reflect.Method.invoke(Method.java:568)
-at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
-at org.testng.internal.invokers.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:69)
-at org.testng.internal.invokers.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:361)
-at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:296)
-at org.testng.internal.invokers.TestMethodWorker.invokeBeforeClassMethods(TestMethodWorker.java:180)
-at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:122)
-at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
-at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
-at java.base/java.lang.Thread.run(Thread.java:833)
-]]>
-            </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.SessionNotCreatedException -->
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- CreataeOrganisationBCPOM -->
-        <test-method is-config="true" signature="Logout()[pri:0, instance:com.crm.Vtiger.testcases3.CreataeOrganisationBCPOMTest@6d60fe40]" started-at="2022-10-21T10:26:44 IST" name="Logout" finished-at="2022-10-21T10:26:44 IST" duration-ms="0" status="SKIP">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- Logout -->
-        <test-method is-config="true" signature="CloseBrowser()[pri:0, instance:com.crm.Vtiger.testcases3.CreataeOrganisationBCPOMTest@6d60fe40]" started-at="2022-10-21T10:26:44 IST" name="CloseBrowser" finished-at="2022-10-21T10:26:44 IST" duration-ms="0" status="SKIP">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- CloseBrowser -->
-      </class> <!-- com.crm.Vtiger.testcases3.CreataeOrganisationBCPOMTest -->
+      </class> <!-- com.crm.Vtiger.testcases3.OrgNameValidateBCPOMTest -->
       <class name="com.crm.Vtiger.testcases3.ContactBCPOMTest">
-        <test-method is-config="true" signature="DatabaseConnection()[pri:0, instance:com.crm.Vtiger.testcases3.ContactBCPOMTest@359df09a]" started-at="2022-10-21T10:26:40 IST" name="DatabaseConnection" finished-at="2022-10-21T10:26:40 IST" duration-ms="26" status="PASS">
+        <test-method is-config="true" signature="DatabaseConnection()[pri:0, instance:com.crm.Vtiger.testcases3.ContactBCPOMTest@5f049ea1]" started-at="2022-10-21T17:14:54 IST" name="DatabaseConnection" finished-at="2022-10-21T17:14:54 IST" duration-ms="18" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- DatabaseConnection -->
-        <test-method is-config="true" signature="launchBrowser(java.lang.String)[pri:0, instance:com.crm.Vtiger.testcases3.ContactBCPOMTest@359df09a]" started-at="2022-10-21T10:26:40 IST" name="launchBrowser" finished-at="2022-10-21T10:26:43 IST" duration-ms="3449" status="FAIL">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[firefox]]>
-              </value>
-            </param>
-          </params>
-          <exception class="org.openqa.selenium.SessionNotCreatedException">
+        <test-method is-config="true" signature="launchBrowser(java.lang.String)[pri:0, instance:com.crm.Vtiger.testcases3.ContactBCPOMTest@5f049ea1]" started-at="2022-10-21T17:14:54 IST" name="launchBrowser" finished-at="1970-01-01T05:30:00 IST" duration-ms="-1666352694554" status="FAIL">
+          <exception class="org.testng.TestNGException">
             <message>
-              <![CDATA[Could not start a new session. Response code 500. Message: Expected browser binary location, but unable to find binary in default location, no 'moz:firefoxOptions.binary' capability provided, and no binary flag set on the command line 
-Host info: host: 'TIGER', ip: '192.168.60.175'
-Build info: version: '4.5.0', revision: 'fe167b119a'
-System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.4.1'
-Driver info: org.openqa.selenium.firefox.FirefoxDriver
-Command: [null, newSession {capabilities=[Capabilities {acceptInsecureCerts: true, browserName: firefox, moz:debuggerAddress: true, moz:firefoxOptions: {}}], desiredCapabilities=Capabilities {acceptInsecureCerts: true, browserName: firefox, moz:debuggerAddress: true, moz:firefoxOptions: {}}}]]]>
+              <![CDATA[
+Parameter 'harisha' is required by BeforeClass on method launchBrowser but has not been marked @Optional or defined
+in C:\Users\91995\git\vtigerrepo\sdet\testngsmoke.xml]]>
             </message>
             <full-stacktrace>
-              <![CDATA[org.openqa.selenium.SessionNotCreatedException: Could not start a new session. Response code 500. Message: Expected browser binary location, but unable to find binary in default location, no 'moz:firefoxOptions.binary' capability provided, and no binary flag set on the command line 
-Host info: host: 'TIGER', ip: '192.168.60.175'
-Build info: version: '4.5.0', revision: 'fe167b119a'
-System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.4.1'
-Driver info: org.openqa.selenium.firefox.FirefoxDriver
-Command: [null, newSession {capabilities=[Capabilities {acceptInsecureCerts: true, browserName: firefox, moz:debuggerAddress: true, moz:firefoxOptions: {}}], desiredCapabilities=Capabilities {acceptInsecureCerts: true, browserName: firefox, moz:debuggerAddress: true, moz:firefoxOptions: {}}}]
-at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:144)
-at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:102)
-at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:67)
-at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:156)
-at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)
-at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:142)
-at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:547)
-at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:242)
-at org.openqa.selenium.remote.RemoteWebDriver.<init>(RemoteWebDriver.java:157)
-at org.openqa.selenium.firefox.FirefoxDriver.<init>(FirefoxDriver.java:110)
-at org.openqa.selenium.firefox.FirefoxDriver.<init>(FirefoxDriver.java:98)
-at org.openqa.selenium.firefox.FirefoxDriver.<init>(FirefoxDriver.java:94)
-at generalUtilities.BaseClass.launchBrowser(BaseClass.java:48)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
-at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-at java.base/java.lang.reflect.Method.invoke(Method.java:568)
-at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
-at org.testng.internal.invokers.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:69)
-at org.testng.internal.invokers.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:361)
-at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:296)
+              <![CDATA[org.testng.TestNGException: 
+Parameter 'harisha' is required by BeforeClass on method launchBrowser but has not been marked @Optional or defined
+in C:\Users\91995\git\vtigerrepo\sdet\testngsmoke.xml
+at org.testng.internal.Parameters.createParams(Parameters.java:267)
+at org.testng.internal.Parameters.createParametersForMethod(Parameters.java:355)
+at org.testng.internal.Parameters.createParameters(Parameters.java:684)
+at org.testng.internal.Parameters.createConfigurationParameters(Parameters.java:166)
+at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:277)
 at org.testng.internal.invokers.TestMethodWorker.invokeBeforeClassMethods(TestMethodWorker.java:180)
 at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:122)
-at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
-at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
-at java.base/java.lang.Thread.run(Thread.java:833)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:806)
+at org.testng.TestRunner.run(TestRunner.java:601)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:433)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:427)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:387)
+at org.testng.SuiteRunner.run(SuiteRunner.java:330)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1256)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1176)
+at org.testng.TestNG.runSuites(TestNG.java:1099)
+at org.testng.TestNG.run(TestNG.java:1067)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
 ]]>
             </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.SessionNotCreatedException -->
+          </exception> <!-- org.testng.TestNGException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- launchBrowser -->
-        <test-method is-config="true" signature="Login()[pri:0, instance:com.crm.Vtiger.testcases3.ContactBCPOMTest@359df09a]" started-at="2022-10-21T10:26:43 IST" name="Login" finished-at="2022-10-21T10:26:43 IST" duration-ms="0" status="SKIP">
+        <test-method is-config="true" signature="Login()[pri:0, instance:com.crm.Vtiger.testcases3.ContactBCPOMTest@5f049ea1]" started-at="2022-10-21T17:14:54 IST" name="Login" finished-at="2022-10-21T17:14:54 IST" duration-ms="0" status="SKIP">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- Login -->
-        <test-method signature="ContactBCPOM()[pri:0, instance:com.crm.Vtiger.testcases3.ContactBCPOMTest@359df09a]" started-at="2022-10-21T10:26:43 IST" name="ContactBCPOM" finished-at="2022-10-21T10:26:43 IST" duration-ms="0" status="SKIP">
-          <exception class="org.openqa.selenium.SessionNotCreatedException">
+        <test-method signature="ContactBCPOM()[pri:0, instance:com.crm.Vtiger.testcases3.ContactBCPOMTest@5f049ea1]" started-at="2022-10-21T17:14:54 IST" name="ContactBCPOM" finished-at="2022-10-21T17:14:54 IST" duration-ms="0" status="SKIP">
+          <exception class="org.testng.TestNGException">
             <message>
-              <![CDATA[Could not start a new session. Response code 500. Message: Expected browser binary location, but unable to find binary in default location, no 'moz:firefoxOptions.binary' capability provided, and no binary flag set on the command line 
-Host info: host: 'TIGER', ip: '192.168.60.175'
-Build info: version: '4.5.0', revision: 'fe167b119a'
-System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.4.1'
-Driver info: org.openqa.selenium.firefox.FirefoxDriver
-Command: [null, newSession {capabilities=[Capabilities {acceptInsecureCerts: true, browserName: firefox, moz:debuggerAddress: true, moz:firefoxOptions: {}}], desiredCapabilities=Capabilities {acceptInsecureCerts: true, browserName: firefox, moz:debuggerAddress: true, moz:firefoxOptions: {}}}]]]>
+              <![CDATA[
+Parameter 'harisha' is required by BeforeClass on method launchBrowser but has not been marked @Optional or defined
+in C:\Users\91995\git\vtigerrepo\sdet\testngsmoke.xml]]>
             </message>
             <full-stacktrace>
-              <![CDATA[org.openqa.selenium.SessionNotCreatedException: Could not start a new session. Response code 500. Message: Expected browser binary location, but unable to find binary in default location, no 'moz:firefoxOptions.binary' capability provided, and no binary flag set on the command line 
-Host info: host: 'TIGER', ip: '192.168.60.175'
-Build info: version: '4.5.0', revision: 'fe167b119a'
-System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.4.1'
-Driver info: org.openqa.selenium.firefox.FirefoxDriver
-Command: [null, newSession {capabilities=[Capabilities {acceptInsecureCerts: true, browserName: firefox, moz:debuggerAddress: true, moz:firefoxOptions: {}}], desiredCapabilities=Capabilities {acceptInsecureCerts: true, browserName: firefox, moz:debuggerAddress: true, moz:firefoxOptions: {}}}]
-at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:144)
-at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:102)
-at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:67)
-at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:156)
-at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)
-at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:142)
-at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:547)
-at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:242)
-at org.openqa.selenium.remote.RemoteWebDriver.<init>(RemoteWebDriver.java:157)
-at org.openqa.selenium.firefox.FirefoxDriver.<init>(FirefoxDriver.java:110)
-at org.openqa.selenium.firefox.FirefoxDriver.<init>(FirefoxDriver.java:98)
-at org.openqa.selenium.firefox.FirefoxDriver.<init>(FirefoxDriver.java:94)
-at generalUtilities.BaseClass.launchBrowser(BaseClass.java:48)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
-at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-at java.base/java.lang.reflect.Method.invoke(Method.java:568)
-at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
-at org.testng.internal.invokers.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:69)
-at org.testng.internal.invokers.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:361)
-at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:296)
+              <![CDATA[org.testng.TestNGException: 
+Parameter 'harisha' is required by BeforeClass on method launchBrowser but has not been marked @Optional or defined
+in C:\Users\91995\git\vtigerrepo\sdet\testngsmoke.xml
+at org.testng.internal.Parameters.createParams(Parameters.java:267)
+at org.testng.internal.Parameters.createParametersForMethod(Parameters.java:355)
+at org.testng.internal.Parameters.createParameters(Parameters.java:684)
+at org.testng.internal.Parameters.createConfigurationParameters(Parameters.java:166)
+at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:277)
 at org.testng.internal.invokers.TestMethodWorker.invokeBeforeClassMethods(TestMethodWorker.java:180)
 at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:122)
-at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
-at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
-at java.base/java.lang.Thread.run(Thread.java:833)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:806)
+at org.testng.TestRunner.run(TestRunner.java:601)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:433)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:427)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:387)
+at org.testng.SuiteRunner.run(SuiteRunner.java:330)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1256)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1176)
+at org.testng.TestNG.runSuites(TestNG.java:1099)
+at org.testng.TestNG.run(TestNG.java:1067)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
 ]]>
             </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.SessionNotCreatedException -->
+          </exception> <!-- org.testng.TestNGException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- ContactBCPOM -->
-        <test-method is-config="true" signature="Logout()[pri:0, instance:com.crm.Vtiger.testcases3.ContactBCPOMTest@359df09a]" started-at="2022-10-21T10:26:43 IST" name="Logout" finished-at="2022-10-21T10:26:43 IST" duration-ms="0" status="SKIP">
+        <test-method is-config="true" signature="Logout()[pri:0, instance:com.crm.Vtiger.testcases3.ContactBCPOMTest@5f049ea1]" started-at="2022-10-21T17:14:54 IST" name="Logout" finished-at="2022-10-21T17:14:54 IST" duration-ms="0" status="SKIP">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- Logout -->
-        <test-method is-config="true" signature="CloseBrowser()[pri:0, instance:com.crm.Vtiger.testcases3.ContactBCPOMTest@359df09a]" started-at="2022-10-21T10:26:43 IST" name="CloseBrowser" finished-at="2022-10-21T10:26:43 IST" duration-ms="0" status="SKIP">
+        <test-method is-config="true" signature="CloseBrowser()[pri:0, instance:com.crm.Vtiger.testcases3.ContactBCPOMTest@5f049ea1]" started-at="2022-10-21T17:14:54 IST" name="CloseBrowser" finished-at="2022-10-21T17:14:54 IST" duration-ms="0" status="SKIP">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- CloseBrowser -->
-        <test-method is-config="true" signature="enddatabase()[pri:0, instance:com.crm.Vtiger.testcases3.ContactBCPOMTest@359df09a]" started-at="2022-10-21T10:27:10 IST" name="enddatabase" finished-at="2022-10-21T10:27:10 IST" duration-ms="0" status="PASS">
+        <test-method is-config="true" signature="enddatabase()[pri:0, instance:com.crm.Vtiger.testcases3.ContactBCPOMTest@5f049ea1]" started-at="2022-10-21T17:14:54 IST" name="enddatabase" finished-at="2022-10-21T17:14:54 IST" duration-ms="1" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- enddatabase -->
       </class> <!-- com.crm.Vtiger.testcases3.ContactBCPOMTest -->
-    </test> <!-- test2 -->
-    <test started-at="2022-10-21T10:26:40 IST" name="test1" finished-at="2022-10-21T10:27:10 IST" duration-ms="30583">
-      <class name="com.crm.Vtiger.testcases3.LeadsBCPOMTest">
-        <test-method is-config="true" signature="launchBrowser(java.lang.String)[pri:0, instance:com.crm.Vtiger.testcases3.LeadsBCPOMTest@8519cb4]" started-at="2022-10-21T10:26:40 IST" name="launchBrowser" finished-at="2022-10-21T10:26:44 IST" duration-ms="4753" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[chrome]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- launchBrowser -->
-        <test-method is-config="true" signature="Login()[pri:0, instance:com.crm.Vtiger.testcases3.LeadsBCPOMTest@8519cb4]" started-at="2022-10-21T10:26:44 IST" name="Login" finished-at="2022-10-21T10:26:47 IST" duration-ms="2895" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- Login -->
-        <test-method signature="LeadsBCPOM()[pri:0, instance:com.crm.Vtiger.testcases3.LeadsBCPOMTest@8519cb4]" started-at="2022-10-21T10:26:47 IST" name="LeadsBCPOM" finished-at="2022-10-21T10:26:56 IST" duration-ms="8461" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- LeadsBCPOM -->
-        <test-method is-config="true" signature="Logout()[pri:0, instance:com.crm.Vtiger.testcases3.LeadsBCPOMTest@8519cb4]" started-at="2022-10-21T10:26:56 IST" name="Logout" finished-at="2022-10-21T10:26:57 IST" duration-ms="1232" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- Logout -->
-        <test-method is-config="true" signature="CloseBrowser()[pri:0, instance:com.crm.Vtiger.testcases3.LeadsBCPOMTest@8519cb4]" started-at="2022-10-21T10:26:57 IST" name="CloseBrowser" finished-at="2022-10-21T10:26:57 IST" duration-ms="82" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- CloseBrowser -->
-      </class> <!-- com.crm.Vtiger.testcases3.LeadsBCPOMTest -->
-      <class name="com.crm.Vtiger.testcases3.CreataeOrganisationBCPOMTest">
-        <test-method is-config="true" signature="launchBrowser(java.lang.String)[pri:0, instance:com.crm.Vtiger.testcases3.CreataeOrganisationBCPOMTest@35dab4eb]" started-at="2022-10-21T10:26:57 IST" name="launchBrowser" finished-at="2022-10-21T10:26:59 IST" duration-ms="1577" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[chrome]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- launchBrowser -->
-        <test-method is-config="true" signature="Login()[pri:0, instance:com.crm.Vtiger.testcases3.CreataeOrganisationBCPOMTest@35dab4eb]" started-at="2022-10-21T10:26:59 IST" name="Login" finished-at="2022-10-21T10:27:00 IST" duration-ms="1717" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- Login -->
-        <test-method signature="CreataeOrganisationBCPOM()[pri:0, instance:com.crm.Vtiger.testcases3.CreataeOrganisationBCPOMTest@35dab4eb]" started-at="2022-10-21T10:27:00 IST" name="CreataeOrganisationBCPOM" finished-at="2022-10-21T10:27:09 IST" duration-ms="8381" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- CreataeOrganisationBCPOM -->
-        <test-method is-config="true" signature="Logout()[pri:0, instance:com.crm.Vtiger.testcases3.CreataeOrganisationBCPOMTest@35dab4eb]" started-at="2022-10-21T10:27:09 IST" name="Logout" finished-at="2022-10-21T10:27:10 IST" duration-ms="1316" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- Logout -->
-        <test-method is-config="true" signature="CloseBrowser()[pri:0, instance:com.crm.Vtiger.testcases3.CreataeOrganisationBCPOMTest@35dab4eb]" started-at="2022-10-21T10:27:10 IST" name="CloseBrowser" finished-at="2022-10-21T10:27:10 IST" duration-ms="102" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- CloseBrowser -->
-      </class> <!-- com.crm.Vtiger.testcases3.CreataeOrganisationBCPOMTest -->
-      <class name="com.crm.Vtiger.testcases3.ContactBCPOMTest">
-        <test-method is-config="true" signature="launchBrowser(java.lang.String)[pri:0, instance:com.crm.Vtiger.testcases3.ContactBCPOMTest@196a42c3]" started-at="2022-10-21T10:26:40 IST" name="launchBrowser" finished-at="2022-10-21T10:26:44 IST" duration-ms="4777" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[chrome]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- launchBrowser -->
-        <test-method is-config="true" signature="Login()[pri:0, instance:com.crm.Vtiger.testcases3.ContactBCPOMTest@196a42c3]" started-at="2022-10-21T10:26:44 IST" name="Login" finished-at="2022-10-21T10:26:47 IST" duration-ms="2889" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- Login -->
-        <test-method signature="ContactBCPOM()[pri:0, instance:com.crm.Vtiger.testcases3.ContactBCPOMTest@196a42c3]" started-at="2022-10-21T10:26:47 IST" name="ContactBCPOM" finished-at="2022-10-21T10:26:57 IST" duration-ms="9772" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- ContactBCPOM -->
-        <test-method is-config="true" signature="Logout()[pri:0, instance:com.crm.Vtiger.testcases3.ContactBCPOMTest@196a42c3]" started-at="2022-10-21T10:26:57 IST" name="Logout" finished-at="2022-10-21T10:26:58 IST" duration-ms="1089" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- Logout -->
-        <test-method is-config="true" signature="CloseBrowser()[pri:0, instance:com.crm.Vtiger.testcases3.ContactBCPOMTest@196a42c3]" started-at="2022-10-21T10:26:58 IST" name="CloseBrowser" finished-at="2022-10-21T10:26:58 IST" duration-ms="87" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- CloseBrowser -->
-      </class> <!-- com.crm.Vtiger.testcases3.ContactBCPOMTest -->
-    </test> <!-- test1 -->
+    </test> <!-- Test -->
   </suite> <!-- Suite -->
 </testng-results>
