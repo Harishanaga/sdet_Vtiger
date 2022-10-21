@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
 <suite name="Failed suite [Suite]" guice-stage="DEVELOPMENT">
+  <parameter name="harisha" value="chrome"/>
   <test thread-count="5" name="Test(failed)">
     <groups>
       <run>
@@ -19,17 +20,6 @@
           <include name="OrgNameValidateBCPOM"/>
         </methods>
       </class> <!-- com.crm.Vtiger.testcases3.OrgNameValidateBCPOMTest -->
-      <class name="com.crm.Vtiger.testcases3.ContactBCPOMTest">
-        <methods>
-          <include name="ContactBCPOM"/>
-          <include name="CloseBrowser"/>
-          <include name="DatabaseConnection"/>
-          <include name="Login"/>
-          <include name="enddatabase"/>
-          <include name="launchBrowser"/>
-          <include name="Logout"/>
-        </methods>
-      </class> <!-- com.crm.Vtiger.testcases3.ContactBCPOMTest -->
     </classes>
   </test> <!-- Test(failed) -->
 </suite> <!-- Failed suite [Suite] -->

@@ -1,207 +1,49 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="8" total="10" passed="0" failed="0" skipped="2">
+<testng-results ignored="9" total="10" passed="1" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2022-10-21T17:14:54 IST" name="Suite" finished-at="2022-10-21T17:14:54 IST" duration-ms="139">
+  <suite started-at="2022-10-21T22:45:31 IST" name="Suite" finished-at="2022-10-21T22:45:49 IST" duration-ms="17563">
     <groups>
-      <group name="smoke">
-        <method signature="ContactBCPOMTest.ContactBCPOM()[pri:0, instance:com.crm.Vtiger.testcases3.ContactBCPOMTest@5f049ea1]" name="ContactBCPOM" class="com.crm.Vtiger.testcases3.ContactBCPOMTest"/>
-        <method signature="OrgNameValidateBCPOMTest.OrgNameValidateBCPOM()[pri:0, instance:com.crm.Vtiger.testcases3.OrgNameValidateBCPOMTest@7a35b0f5]" name="OrgNameValidateBCPOM" class="com.crm.Vtiger.testcases3.OrgNameValidateBCPOMTest"/>
-      </group> <!-- smoke -->
+      <group name="integration">
+        <method signature="CreataeOrganisationBCPOMTest.CreataeOrganisationBCPOM()[pri:0, instance:com.crm.Vtiger.testcases3.CreataeOrganisationBCPOMTest@5b218417]" name="CreataeOrganisationBCPOM" class="com.crm.Vtiger.testcases3.CreataeOrganisationBCPOMTest"/>
+      </group> <!-- integration -->
     </groups>
-    <test started-at="2022-10-21T17:14:54 IST" name="Test" finished-at="2022-10-21T17:14:54 IST" duration-ms="139">
-      <class name="com.crm.Vtiger.testcases3.OrgNameValidateBCPOMTest">
-        <test-method is-config="true" signature="launchBrowser(java.lang.String)[pri:0, instance:com.crm.Vtiger.testcases3.OrgNameValidateBCPOMTest@7a35b0f5]" started-at="2022-10-21T17:14:54 IST" name="launchBrowser" finished-at="1970-01-01T05:30:00 IST" duration-ms="-1666352694640" status="FAIL">
-          <exception class="org.testng.TestNGException">
-            <message>
-              <![CDATA[
-Parameter 'harisha' is required by BeforeClass on method launchBrowser but has not been marked @Optional or defined
-in C:\Users\91995\git\vtigerrepo\sdet\testngsmoke.xml]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[org.testng.TestNGException: 
-Parameter 'harisha' is required by BeforeClass on method launchBrowser but has not been marked @Optional or defined
-in C:\Users\91995\git\vtigerrepo\sdet\testngsmoke.xml
-at org.testng.internal.Parameters.createParams(Parameters.java:267)
-at org.testng.internal.Parameters.createParametersForMethod(Parameters.java:355)
-at org.testng.internal.Parameters.createParameters(Parameters.java:684)
-at org.testng.internal.Parameters.createConfigurationParameters(Parameters.java:166)
-at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:277)
-at org.testng.internal.invokers.TestMethodWorker.invokeBeforeClassMethods(TestMethodWorker.java:180)
-at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:122)
-at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-at org.testng.TestRunner.privateRun(TestRunner.java:806)
-at org.testng.TestRunner.run(TestRunner.java:601)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:433)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:427)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:387)
-at org.testng.SuiteRunner.run(SuiteRunner.java:330)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1256)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1176)
-at org.testng.TestNG.runSuites(TestNG.java:1099)
-at org.testng.TestNG.run(TestNG.java:1067)
-at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-]]>
-            </full-stacktrace>
-          </exception> <!-- org.testng.TestNGException -->
+    <test started-at="2022-10-21T22:45:31 IST" name="Test" finished-at="2022-10-21T22:45:49 IST" duration-ms="17563">
+      <class name="com.crm.Vtiger.testcases3.CreataeOrganisationBCPOMTest">
+        <test-method is-config="true" signature="launchBrowser(java.lang.String)[pri:0, instance:com.crm.Vtiger.testcases3.CreataeOrganisationBCPOMTest@5b218417]" started-at="2022-10-21T22:45:31 IST" name="launchBrowser" finished-at="2022-10-21T22:45:35 IST" duration-ms="3724" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- launchBrowser -->
-        <test-method is-config="true" signature="Login()[pri:0, instance:com.crm.Vtiger.testcases3.OrgNameValidateBCPOMTest@7a35b0f5]" started-at="2022-10-21T17:14:54 IST" name="Login" finished-at="2022-10-21T17:14:54 IST" duration-ms="0" status="SKIP">
+        <test-method is-config="true" signature="Login()[pri:0, instance:com.crm.Vtiger.testcases3.CreataeOrganisationBCPOMTest@5b218417]" started-at="2022-10-21T22:45:35 IST" name="Login" finished-at="2022-10-21T22:45:37 IST" duration-ms="2482" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- Login -->
-        <test-method signature="OrgNameValidateBCPOM()[pri:0, instance:com.crm.Vtiger.testcases3.OrgNameValidateBCPOMTest@7a35b0f5]" started-at="2022-10-21T17:14:54 IST" name="OrgNameValidateBCPOM" finished-at="2022-10-21T17:14:54 IST" duration-ms="1" status="SKIP">
-          <exception class="org.testng.TestNGException">
-            <message>
-              <![CDATA[
-Parameter 'harisha' is required by BeforeClass on method launchBrowser but has not been marked @Optional or defined
-in C:\Users\91995\git\vtigerrepo\sdet\testngsmoke.xml]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[org.testng.TestNGException: 
-Parameter 'harisha' is required by BeforeClass on method launchBrowser but has not been marked @Optional or defined
-in C:\Users\91995\git\vtigerrepo\sdet\testngsmoke.xml
-at org.testng.internal.Parameters.createParams(Parameters.java:267)
-at org.testng.internal.Parameters.createParametersForMethod(Parameters.java:355)
-at org.testng.internal.Parameters.createParameters(Parameters.java:684)
-at org.testng.internal.Parameters.createConfigurationParameters(Parameters.java:166)
-at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:277)
-at org.testng.internal.invokers.TestMethodWorker.invokeBeforeClassMethods(TestMethodWorker.java:180)
-at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:122)
-at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-at org.testng.TestRunner.privateRun(TestRunner.java:806)
-at org.testng.TestRunner.run(TestRunner.java:601)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:433)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:427)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:387)
-at org.testng.SuiteRunner.run(SuiteRunner.java:330)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1256)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1176)
-at org.testng.TestNG.runSuites(TestNG.java:1099)
-at org.testng.TestNG.run(TestNG.java:1067)
-at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-]]>
-            </full-stacktrace>
-          </exception> <!-- org.testng.TestNGException -->
+        <test-method signature="CreataeOrganisationBCPOM()[pri:0, instance:com.crm.Vtiger.testcases3.CreataeOrganisationBCPOMTest@5b218417]" started-at="2022-10-21T22:45:37 IST" name="CreataeOrganisationBCPOM" finished-at="2022-10-21T22:45:47 IST" duration-ms="9702" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- OrgNameValidateBCPOM -->
-        <test-method is-config="true" signature="Logout()[pri:0, instance:com.crm.Vtiger.testcases3.OrgNameValidateBCPOMTest@7a35b0f5]" started-at="2022-10-21T17:14:54 IST" name="Logout" finished-at="2022-10-21T17:14:54 IST" duration-ms="0" status="SKIP">
+        </test-method> <!-- CreataeOrganisationBCPOM -->
+        <test-method is-config="true" signature="Logout()[pri:0, instance:com.crm.Vtiger.testcases3.CreataeOrganisationBCPOMTest@5b218417]" started-at="2022-10-21T22:45:47 IST" name="Logout" finished-at="2022-10-21T22:45:48 IST" duration-ms="1423" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- Logout -->
-        <test-method is-config="true" signature="CloseBrowser()[pri:0, instance:com.crm.Vtiger.testcases3.OrgNameValidateBCPOMTest@7a35b0f5]" started-at="2022-10-21T17:14:54 IST" name="CloseBrowser" finished-at="2022-10-21T17:14:54 IST" duration-ms="0" status="SKIP">
+        <test-method is-config="true" signature="CloseBrowser()[pri:0, instance:com.crm.Vtiger.testcases3.CreataeOrganisationBCPOMTest@5b218417]" started-at="2022-10-21T22:45:48 IST" name="CloseBrowser" finished-at="2022-10-21T22:45:49 IST" duration-ms="161" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- CloseBrowser -->
-      </class> <!-- com.crm.Vtiger.testcases3.OrgNameValidateBCPOMTest -->
+      </class> <!-- com.crm.Vtiger.testcases3.CreataeOrganisationBCPOMTest -->
       <class name="com.crm.Vtiger.testcases3.ContactBCPOMTest">
-        <test-method is-config="true" signature="DatabaseConnection()[pri:0, instance:com.crm.Vtiger.testcases3.ContactBCPOMTest@5f049ea1]" started-at="2022-10-21T17:14:54 IST" name="DatabaseConnection" finished-at="2022-10-21T17:14:54 IST" duration-ms="18" status="PASS">
+        <test-method is-config="true" signature="DatabaseConnection()[pri:0, instance:com.crm.Vtiger.testcases3.ContactBCPOMTest@72035809]" started-at="2022-10-21T22:45:31 IST" name="DatabaseConnection" finished-at="2022-10-21T22:45:31 IST" duration-ms="19" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- DatabaseConnection -->
-        <test-method is-config="true" signature="launchBrowser(java.lang.String)[pri:0, instance:com.crm.Vtiger.testcases3.ContactBCPOMTest@5f049ea1]" started-at="2022-10-21T17:14:54 IST" name="launchBrowser" finished-at="1970-01-01T05:30:00 IST" duration-ms="-1666352694554" status="FAIL">
-          <exception class="org.testng.TestNGException">
-            <message>
-              <![CDATA[
-Parameter 'harisha' is required by BeforeClass on method launchBrowser but has not been marked @Optional or defined
-in C:\Users\91995\git\vtigerrepo\sdet\testngsmoke.xml]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[org.testng.TestNGException: 
-Parameter 'harisha' is required by BeforeClass on method launchBrowser but has not been marked @Optional or defined
-in C:\Users\91995\git\vtigerrepo\sdet\testngsmoke.xml
-at org.testng.internal.Parameters.createParams(Parameters.java:267)
-at org.testng.internal.Parameters.createParametersForMethod(Parameters.java:355)
-at org.testng.internal.Parameters.createParameters(Parameters.java:684)
-at org.testng.internal.Parameters.createConfigurationParameters(Parameters.java:166)
-at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:277)
-at org.testng.internal.invokers.TestMethodWorker.invokeBeforeClassMethods(TestMethodWorker.java:180)
-at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:122)
-at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-at org.testng.TestRunner.privateRun(TestRunner.java:806)
-at org.testng.TestRunner.run(TestRunner.java:601)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:433)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:427)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:387)
-at org.testng.SuiteRunner.run(SuiteRunner.java:330)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1256)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1176)
-at org.testng.TestNG.runSuites(TestNG.java:1099)
-at org.testng.TestNG.run(TestNG.java:1067)
-at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-]]>
-            </full-stacktrace>
-          </exception> <!-- org.testng.TestNGException -->
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- launchBrowser -->
-        <test-method is-config="true" signature="Login()[pri:0, instance:com.crm.Vtiger.testcases3.ContactBCPOMTest@5f049ea1]" started-at="2022-10-21T17:14:54 IST" name="Login" finished-at="2022-10-21T17:14:54 IST" duration-ms="0" status="SKIP">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- Login -->
-        <test-method signature="ContactBCPOM()[pri:0, instance:com.crm.Vtiger.testcases3.ContactBCPOMTest@5f049ea1]" started-at="2022-10-21T17:14:54 IST" name="ContactBCPOM" finished-at="2022-10-21T17:14:54 IST" duration-ms="0" status="SKIP">
-          <exception class="org.testng.TestNGException">
-            <message>
-              <![CDATA[
-Parameter 'harisha' is required by BeforeClass on method launchBrowser but has not been marked @Optional or defined
-in C:\Users\91995\git\vtigerrepo\sdet\testngsmoke.xml]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[org.testng.TestNGException: 
-Parameter 'harisha' is required by BeforeClass on method launchBrowser but has not been marked @Optional or defined
-in C:\Users\91995\git\vtigerrepo\sdet\testngsmoke.xml
-at org.testng.internal.Parameters.createParams(Parameters.java:267)
-at org.testng.internal.Parameters.createParametersForMethod(Parameters.java:355)
-at org.testng.internal.Parameters.createParameters(Parameters.java:684)
-at org.testng.internal.Parameters.createConfigurationParameters(Parameters.java:166)
-at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:277)
-at org.testng.internal.invokers.TestMethodWorker.invokeBeforeClassMethods(TestMethodWorker.java:180)
-at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:122)
-at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-at org.testng.TestRunner.privateRun(TestRunner.java:806)
-at org.testng.TestRunner.run(TestRunner.java:601)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:433)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:427)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:387)
-at org.testng.SuiteRunner.run(SuiteRunner.java:330)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1256)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1176)
-at org.testng.TestNG.runSuites(TestNG.java:1099)
-at org.testng.TestNG.run(TestNG.java:1067)
-at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-]]>
-            </full-stacktrace>
-          </exception> <!-- org.testng.TestNGException -->
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- ContactBCPOM -->
-        <test-method is-config="true" signature="Logout()[pri:0, instance:com.crm.Vtiger.testcases3.ContactBCPOMTest@5f049ea1]" started-at="2022-10-21T17:14:54 IST" name="Logout" finished-at="2022-10-21T17:14:54 IST" duration-ms="0" status="SKIP">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- Logout -->
-        <test-method is-config="true" signature="CloseBrowser()[pri:0, instance:com.crm.Vtiger.testcases3.ContactBCPOMTest@5f049ea1]" started-at="2022-10-21T17:14:54 IST" name="CloseBrowser" finished-at="2022-10-21T17:14:54 IST" duration-ms="0" status="SKIP">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- CloseBrowser -->
-        <test-method is-config="true" signature="enddatabase()[pri:0, instance:com.crm.Vtiger.testcases3.ContactBCPOMTest@5f049ea1]" started-at="2022-10-21T17:14:54 IST" name="enddatabase" finished-at="2022-10-21T17:14:54 IST" duration-ms="1" status="PASS">
+        <test-method is-config="true" signature="enddatabase()[pri:0, instance:com.crm.Vtiger.testcases3.ContactBCPOMTest@72035809]" started-at="2022-10-21T22:45:49 IST" name="enddatabase" finished-at="2022-10-21T22:45:49 IST" duration-ms="0" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- enddatabase -->
