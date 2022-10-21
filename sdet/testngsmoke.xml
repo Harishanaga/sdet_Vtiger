@@ -6,7 +6,9 @@
   <include name="smoke"></include>
   </run>
   </groups>
-  <test thread-count="5" name="Test">
+  
+  <test  name="Test">
+  <parameter name="harisha" value="chrome"></parameter>
     <classes>
       <class name="com.crm.Vtiger.testcases3.ContactBCPOMTest"/>
       <class name="com.crm.Vtiger.testcases3.LeadsBCPOMTest"/>

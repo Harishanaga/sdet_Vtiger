@@ -22,7 +22,7 @@ public class OrganisationInfoPage
 	
 	public String hText()
 	{
-		String arr=(String) Header.getText();
+		String arr=(String)Header.getText();
 		String arr1[]=arr.split(" ");
 		String value=arr1[0];
 		String value1=arr1[1];
