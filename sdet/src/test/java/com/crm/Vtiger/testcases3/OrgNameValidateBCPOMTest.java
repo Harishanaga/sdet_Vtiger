@@ -20,12 +20,12 @@ import io.github.bonigarcia.wdm.WebDriverManager;
 @Listeners(ListImp.class)
 public class OrgNameValidateBCPOMTest extends BaseClass
 {
-	ExcelFileUtility efu=new ExcelFileUtility();
+	
 	@Test(groups="smoke")
 	public void OrgNameValidateBCPOM() throws Throwable
 	{
 
-	
+	ExcelFileUtility efu=new ExcelFileUtility();
 	String orgName=efu.readDataFromExcelFile("Sheet1", 1, 1)+JavaUtility.generateRannum();
 	String indname=efu.readDataFromExcelFile("Sheet1", 1, 2);
 	

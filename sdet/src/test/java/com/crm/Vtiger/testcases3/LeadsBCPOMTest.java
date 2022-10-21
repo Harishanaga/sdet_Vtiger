@@ -17,12 +17,12 @@ import io.github.bonigarcia.wdm.WebDriverManager;
 @Listeners(ListImp.class)
 public class LeadsBCPOMTest extends BaseClass
 {
-	ExcelFileUtility efu=new ExcelFileUtility();
+	
 	@Test(groups="regression")
 	public void LeadsBCPOM() throws Throwable
 	{
 		
-		
+		ExcelFileUtility efu=new ExcelFileUtility();
 		String orgName=efu.readDataFromExcelFile("Sheet1", 1, 1); 
 		 String fNAME=efu.readDataFromExcelFile("Sheet1", 3, 1);
 		 String fNAMETF=efu.readDataFromExcelFile("Sheet1", 4, 1);

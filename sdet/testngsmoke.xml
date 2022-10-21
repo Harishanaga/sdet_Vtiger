@@ -7,7 +7,6 @@
   </run>
   </groups>
   <test thread-count="5" name="Test">
-  
     <classes>
       <class name="com.crm.Vtiger.testcases3.ContactBCPOMTest"/>
       <class name="com.crm.Vtiger.testcases3.LeadsBCPOMTest"/>
