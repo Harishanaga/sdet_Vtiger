@@ -38,8 +38,8 @@ public class BaseClass
 	@Parameters("harisha")
 	public void launchBrowser(String Browser) throws Throwable 
 	{
-		String browser=pfu.readDataFromPropertyFile("harisha");
-		if(Browser.equals(browser)) {
+		
+		if(Browser.equals("chrome")) {
 		WebDriverManager.chromedriver().setup();
         driver=new ChromeDriver();
         odriver=driver;
@@ -78,6 +78,7 @@ public class BaseClass
 	@AfterClass(groups={"smoke","regression","integration"})
 	public void CloseBrowser()
 	{
+		System.out.println("After  class is executing");
 		driver.close();
 	}
 
