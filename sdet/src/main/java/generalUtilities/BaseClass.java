@@ -33,8 +33,9 @@ public class BaseClass
 		System.out.println("....Database Connection ending....");
 	}
 	
-	@Parameters("harisha")
+	
 	@BeforeClass(groups={"smoke","regression","integration"})
+	@Parameters("harisha")
 	public void launchBrowser(String Browser) throws Throwable 
 	{
 		String browser=pfu.readDataFromPropertyFile("harisha");
