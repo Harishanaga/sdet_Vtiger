@@ -24,13 +24,13 @@ public class WebDriverUtility {
 		driver.manage().window().maximize();
 	}
 	/**
-	 * @author RAJA
+	 * @author Harisha
 	 */
 	public void implicitlyWait() {
 		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
 	}
 	/**
-	 * @author RAJA
+	 * @author harisha
 	 */
 
 	public void SelectByIndex(WebElement ele,int num) {
@@ -48,7 +48,7 @@ public class WebDriverUtility {
 		select.selectByValue(value);
 	}
 	/**
-	 *@author RAJA
+	 *@author harisha
 	 * @param parentwin 
 	 */
 	public String switchToParent() {
