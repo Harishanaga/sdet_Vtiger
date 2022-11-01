@@ -1,6 +1,12 @@
 package generalUtilities;
 
+import java.io.File;
+
+import org.apache.commons.io.FileUtils;
+import org.openqa.selenium.OutputType;
+import org.openqa.selenium.TakesScreenshot;
 import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebDriverException;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.testng.annotations.AfterClass;
@@ -100,5 +106,19 @@ public class BaseClass
 
 
 	}
-
+	public static String takeScreenShot(String name)
+	{
+		TakesScreenshot ts=(TakesScreenshot)BaseClass.odriver;
+		File src =ts.getScreenshotAs(OutputType.FILE);
+		String path="./Screenshot/"+name+".png";
+		File dest=new File(path);
+		try {
+			FileUtils.moveFile(src, dest);
+		}
+		catch(Exception ex)
+		{
+			ex.printStackTrace();
+		}
+		return path;
+	}
 }
